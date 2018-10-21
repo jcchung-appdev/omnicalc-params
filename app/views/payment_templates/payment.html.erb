@@ -1,0 +1,6 @@
+<h1>Payment Results</h1>
+<p><b>APR</b><br><%= @apr %>%</p>
+<p><b>Number of years</b><br><%= @yrs %></p>
+<p><b>Principal</b><br><%= number_to_currency(@pv) %></p>
+<p><b>Payment</b><br><%= number_to_currency(@pmt) %></p>
+<p><a href="/payment/new">Calculate another payment</a></p>
