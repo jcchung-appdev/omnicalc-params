@@ -1,5 +1,5 @@
 <h1>Payment Results</h1>
-<p><b>APR</b><br><%= @apr %>%</p>
+<p><b>APR</b><br><%= number_to_percentage(@apr, :precision => 4) %></p>
 <p><b>Number of years</b><br><%= @yrs %></p>
 <p><b>Principal</b><br><%= number_to_currency(@pv) %></p>
 <p><b>Payment</b><br><%= number_to_currency(@pmt) %></p>

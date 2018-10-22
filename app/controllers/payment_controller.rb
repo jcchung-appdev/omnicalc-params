@@ -2,7 +2,7 @@ class PaymentController < ApplicationController
     def payment
         @apr = params.fetch("apr").to_f 
         @yrs = params.fetch("yrs").to_f
-        @pv = params.fetch("pv").to_f
+        @pv = params.fetch("principal").to_f
         
         apr = @apr / 100 / 12
         
